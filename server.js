@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const PORT = 5000;
+const dotenv = require('dotenv');
+const PORT = process.env.PORT || 5000;
 
 app.use('/public', express.static('public'));
 app.use(express.static(__dirname + '/public'));
