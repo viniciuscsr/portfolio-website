@@ -25,6 +25,7 @@
                     <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#section-skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#section-projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#section-education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#section-about-me">About Me</a></li>
                 </ul>
@@ -158,7 +159,6 @@
         </div>
     </section>
 
-
     <section class="site-section " id="section-projects">
         <div class="container">
             <div class="row">
@@ -169,13 +169,18 @@
                 </div>
                 <div class="col-md-12">
                     <div class="resume-item mb-4 white-section">
-                        <img src="/images/eShop.png" class="rounded img-fluid border float-right ml-2" alt="...">
+                        <img src="/images/eShop.png" class="rounded img-fluid border float-right ml-2 project-image"
+                            alt="...">
                         <a href="http://bit.ly/eshop-1645">
                             <h3>eShop</h3>
                         </a>
-                        <p>Ecommerce application developed using react, redux, mongo and express. This application
-                            features a PayPal integration,
-                            REST APIs and admin functionalities.</p>
+                        <p>Ecommerce app developed using react.js, mongo and express. This application features a PayPal
+                            integration, REST APIs and
+                            admin functionalities.</p>
+                        <ul>
+                            <li>Paypal integration at checkout.</li>
+                            <li>Utilized Redux for state management.</li>
+                        </ul>
                         <a href="http://bit.ly/eshop-1645" class="btn btn-primary px-4 py-2 btn-sm smoothscroll"><i
                                 class="fas fa-lg fa-desktop"></i> Demo</a>
                         <a href="https://github.com/viniciuscsr/eShop" class="btn btn-secondary px-4 py-2 btn-sm"><i
@@ -187,9 +192,13 @@
                         <a href="http://bit.ly/instaclonereact251">
                             <h3>InstaClone</h3>
                         </a>
-                        <p>InstaClone is a simplified version of Instagram where users can post pictures, leave
-                            comments, like posts and follow
-                            each other.</p>
+                        <p>InstaClone is a simplified version of Instagram where users can post pictures, comment and
+                            like posts and follow each
+                            other. This application leverages react, redux, and node.js.</p>
+                        <ul>
+                            <li>Utilized Multer for image upload.</li>
+                            <li>Implemented backend user authentication using JWT.</li>
+                        </ul>
                         <a href="http://bit.ly/instaclonereact251"
                             class="btn btn-primary px-4 py-2 btn-sm smoothscroll"><i class="fas fa-lg fa-desktop"></i>
                             Demo</a>
@@ -202,9 +211,13 @@
                         <a href="http://bit.ly/stocktracker0102">
                             <h3>Stock Tracker</h3>
                         </a>
-                        <p>Web application developed using the PERN stack and MVC architecture that helps investors keep
-                            track of their portfolio.
-                            Users can perform CRUD operations as well as access stock data, news and a dashboard.</p>
+                        <p>Web application developed using the PERN stack that helps investors keep track of their stock
+                            portfolio. Users can
+                            perform CRUD operations as well as access stock data, news and a dashboard.</p>
+                        <ul>
+                            <li>Utilized financial APIs to pull stock quotes and news data.
+                            </li>
+                        </ul>
                         <a href="http://bit.ly/stocktracker0102"
                             class="btn btn-primary px-4 py-2 btn-sm smoothscroll"><i class="fas fa-lg fa-desktop"></i>
                             Demo</a>
@@ -212,26 +225,49 @@
                             class="btn btn-secondary px-4 py-2 btn-sm"><i class="fab fa-lg fa-github"></i>
                             Repository</a>
                     </div>
-                    <div class="resume-item mb-4 white-section ">
-                        <img src="/images/cashapp.png" class="rounded img-fluid border float-right ml-2" alt="...">
-                        <a href="http://bit.ly/CashApp-50193">
-                            <h3>CashApp</h3>
-                        </a>
-                        <p>The Cashapp clone is a web application built with node, PostgreSQL and express which allows
-                            peer to peer payments. Aside
-                            from CSRF protection, the application also features PostgreSQL transactions that guarantees
-                            the atomicity of the data.</p>
-                        <a href="http://bit.ly/CashApp-50193" class="btn btn-primary px-4 py-2 btn-sm smoothscroll"><i
-                                class="fas fa-lg fa-desktop"></i> Demo</a>
-                        <a href="https://github.com/viniciuscsr/cashapp" class="btn btn-secondary px-4 py-2 btn-sm"><i
-                                class="fab fa-lg fa-github"></i>
-                            Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-section white-section" id="section-experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>My <strong>Experience</strong></h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="resume-item mb-4 text-white">
+                        <span class="date text-white "> Nov 2018 - Present </span>
+                        <h3>Fit Small Business - Lead SEO Strategist</h3>
+                        <ul>
+                            <li>Strategized and led SEO projects in 4 topic teams improving overall search visibility by
+                                21% for sales and marketing
+                                categories.
+                            </li>
+                            <li>Trained new team members on SEO strategies such as keyword research, onpage
+                                optimizations and topic clusters</li>
+                            <li>Advised the team on tech SEO considering implications such as crawling, indexing, and
+                                website structure.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item mb-4 text-white">
+                        <span class="date text-white "> Aug 2020 - Oct 2020</span>
+                        <h3>Fight Pandemics - Full Stack Developer Volunteer</h3>
+                        <ul>
+                            <li>Collaborated with a team of 4 engineers to plan and implement the notification feature.
+                            </li>
+                            <li>Developed functions and triggers on MongoDB Stitch so notification collection would get
+                                automatically populated
+                                when new comments and likes were created.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="site-section white-section" id="section-education">
+    <section class="site-section" id="section-education">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
@@ -240,13 +276,14 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="resume-item mb-4 text-white">
-                        <span class="date text-white "> Jan 2020 - Apr 2020</span>
+                    <div class="resume-item mb-4 white-section">
+                        <span class="date"> Jan 2020 - Apr 2020</span>
                         <h3>The Web Developer Bootcamp</h3>
-                        <p>HTML, CSS, Bootstrap, JavaScript, Node, Express, MongoDB, Heroku</p>
+                        <p>The curriculum encompasses a variety of technologies including Node, Express, MongoDB, React,
+                            Redux, Git, HTML, and CSS.</p>
                     </div>
-                    <div class="resume-item mb-4 text-white">
-                        <span class="date text-white "> 2010 - 2015 </span>
+                    <div class="resume-item mb-4 white-section">
+                        <span class="date"> 2010 - 2015 </span>
                         <h3>Bachelor of Mechanical Engineering</h3>
                         <p>Pontifícia Universidade Católica</p>
                     </div>
@@ -254,7 +291,7 @@
             </div>
         </div>
     </section>
-    <section class="site-section" id="section-about-me">
+    <section class="site-section white-section" id="section-about-me">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
@@ -264,26 +301,26 @@
                     <div class="section-heading">
                         <h2>About <strong>Me</strong></h2>
                     </div>
-                    <p class="mb-5 ">From the moment I decided to become a software engineer, I knew it was going to be
-                        a difficult and long journey.
-                        Focusing on a few technologies and studying every day was my strategy to achieve this goal. I
-                        learned as much as I could
-                        about JavaScript instead of learning a handful of languages and not mastering any. This was also
-                        my approach for
-                        developing my four major projects above. They are simple applications that feature fundamental
-                        concepts from JavaScript,
-                        algorithms, and data structures.</p>
+                    <p class="mb-5 ">Software engineer with proven ability to adapt rapidly to new environments
+                        delivering high quality code. Quickly became
+                        fluent in major Javascript technologies developing functional applications and contributing to
+                        open source projects.
+                        Experienced at working in cross-functional teams managing projects from start to finish. Eager
+                        to work on high growth
+                        products with a desire to learn new technologies.</p>
                 </div>
             </div>
         </div>
     </section>
     <div class="icon-bar">
+        <a href="public/pdf/3.3.21 FullStack Dev.docx.pdf" target="_blank" class="social-item my-2"><span
+                class="far fa-lg fa-file"></span></a>
         <a href="mailto:viniciuscsr@gmail.com" class="social-item my-2"><span class="far fa-lg fa-envelope"></span></a>
         <a href="https://github.com/viniciuscsr" class="social-item my-2"><span class="fab fa-2x fa-github"></span></a>
         <a href="https://www.linkedin.com/in/vinicius-c-s-rodrigues/" class="social-item my-2"><span
                 class="fab fa-lg fa-linkedin-in"></span></a>
     </div>
-    <footer class="site-footer">
+    <footer class="site-footer white-section">
 
     </footer>
 

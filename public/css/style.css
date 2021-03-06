@@ -54,11 +54,11 @@ a {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  color: #4682B4;
+  color: #4682b4;
 }
 a:focus,
 a:active {
-  color: #b2c251;
+  color: #0f70bf;
   text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ a:active {
   }
 }
 .site-navbar .navbar-nav.active > a {
-  color: #4682B4 !important;
+  color: #4682b4 !important;
 }
 .site-navbar.scrolled {
   background: #fff;
@@ -161,7 +161,7 @@ a:active {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  background: #4682B4 !important;
+  background: #4682b4 !important;
 }
 .site-navbar.scrolled .navbar-brand {
   color: #000;
@@ -173,13 +173,13 @@ a:active {
   color: rgba(0, 0, 0, 0.7) !important;
 }
 .site-navbar.scrolled .navbar-nav > li > a:hover {
-  color: #4682B4 !important;
+  color: #4682b4 !important;
 }
 .site-navbar.scrolled .navbar-nav > li > a.active {
-  color: #4682B4 !important;
+  color: #4682b4 !important;
 }
 .site-navbar.scrolled .navbar-nav > li.active > a {
-  color: #4682B4 !important;
+  color: #4682b4 !important;
 }
 
 .site-hero {
@@ -275,7 +275,7 @@ a:active {
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-  background: #b2c251;
+  background: #0f70bf;
 }
 
 .single-portfolio {
@@ -342,7 +342,7 @@ a:active {
 }
 
 #section-projects .resume-item {
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .resume-item .date {
@@ -357,7 +357,7 @@ a:active {
   font-size: 16px;
 }
 .resume-item h3 {
-  color: #4682B4;
+  color: #4682b4;
   font-size: 20px;
 }
 .resume-item .school {
@@ -368,8 +368,8 @@ a:active {
 }
 
 .resume-item .img-fluid {
-  height: 200px;
-  width: 350px;
+  height: 300px;
+  width: 525px;
 }
 
 .site-footer {
@@ -430,6 +430,6 @@ h4 {
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: #4682B4;
+  color: #4682b4;
   font-size: 20px;
 }
