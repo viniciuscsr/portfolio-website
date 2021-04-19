@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: #fff;
   color: rgba(255, 255, 255, 0.4);
-  background: #222;
+  background: whitesmoke;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300;
@@ -189,10 +195,12 @@ a:active {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  background-image: url(../images/image_01.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .site-hero,
 .site-hero .row {
-  height: 100vh;
+  height: 95vh;
   min-height: 800px;
 }
 .site-hero:before {
@@ -233,6 +241,7 @@ a:active {
 }
 
 .site-section {
+  background: #222;
   padding: 5em 0;
 }
 
@@ -388,12 +397,21 @@ a:active {
   font-size: 22px;
   margin: 0 10px;
 }
+
+.social-item:hover {
+  transform: translateY(-3px);
+}
+
+.social-item:active {
+  transform: translateY(-1px);
+}
+
 .social-item > span {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
   transform: translate(-50%, -50%);
 }
 
@@ -438,4 +456,33 @@ h4 {
   .icon-bar {
     visibility: hidden;
   }
+}
+
+.name-heading {
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.hello-heading {
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.resume-button {
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #4682b4;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.resume-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.resume-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
