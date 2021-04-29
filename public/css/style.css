@@ -18,12 +18,6 @@ body {
   font-weight: 300;
   box-sizing: border-box; }
 
-.p1-gradient-bg,
-.thumb .overlay-bg {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
-
 ::-moz-selection {
   background: #000;
   color: #fff; }
@@ -235,9 +229,22 @@ a:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
 
-.site-section {
-  background: #222;
+section {
   padding: 5em 0; }
+
+.dark-section {
+  background: #222; }
+
+.white-section {
+  background-color: whitesmoke;
+  color: #222; }
+  .white-section h1,
+  .white-section h2,
+  .white-section h3,
+  .white-section h4,
+  .white-section h5,
+  .white-section h6 {
+    color: #222; }
 
 .section-heading {
   margin-bottom: 3rem;
@@ -279,23 +286,26 @@ a:active {
 .btn.btn-primary:focus {
   background: #0f70bf; }
 
-.single-portfolio {
+.skill-card {
   margin-bottom: 5rem;
   display: block; }
 
-.single-portfolio .relative {
+.skill-card__image-div {
   margin-bottom: 2rem; }
 
-.single-portfolio .p-inner {
+.skill-card .p-inner {
   text-align: center; }
 
-.single-portfolio .p-inner h4 {
+.skill-card .p-inner h4 {
   font-size: 2rem; }
 
-.single-portfolio .p-inner .cat {
+.skill-card .p-inner .cat {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #cccccc; }
+
+.skill-card {
+  border-radius: 0.5rem; }
 
 .image {
   opacity: 1;
@@ -307,25 +317,6 @@ a:active {
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
-
-.single-portfolio {
-  border-radius: 0.5rem; }
-
-.single-portfolio:hover .thumb .overlay-bg {
-  opacity: 0.85; }
-
-.thumb .overlay-bg {
-  opacity: 0;
-  border-radius: 0.5rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .thumb .overlay-bg {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none; } }
 
 .resume-item {
   padding: 3rem;
@@ -365,7 +356,9 @@ a:active {
   width: 52.5rem; }
 
 .site-footer {
-  padding: 3em 0rem; }
+  padding: 3em 0rem;
+  background-color: whitesmoke;
+  color: #222; }
 
 .site-footer p:last-child {
   margin-bottom: 0rem; }
@@ -398,12 +391,8 @@ a:active {
   letter-spacing: 0.2rem;
   color: rgba(255, 255, 255, 0.5) !important; }
 
-.white-section {
+.white-card {
   background-color: whitesmoke;
-  color: #222; }
-
-.white-section h2,
-h4 {
   color: #222; }
 
 .tech-logos {

@@ -22,13 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-.p1-gradient-bg,
-.thumb .overlay-bg {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-}
-
 ::-moz-selection {
   background: #000;
   color: #fff;
@@ -264,10 +257,30 @@ a:active {
   }
 }
 
-.site-section {
-  background: #222;
+// Site sections
+
+section {
   padding: 5em 0;
 }
+
+.dark-section {
+  background: #222;
+}
+
+.white-section {
+  background-color: whitesmoke;
+  color: #222;
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #222;
+  }
+}
+
+// Section Heading
 
 .section-heading {
   margin-bottom: 3rem;
@@ -290,6 +303,8 @@ a:active {
   transform: translateX(-50%);
 }
 
+// Button
+
 .btn {
   border-radius: 10rem;
   text-transform: uppercase;
@@ -311,23 +326,29 @@ a:active {
   background: #0f70bf;
 }
 
-.single-portfolio {
+//  Skill Card
+
+.skill-card {
   margin-bottom: 5rem;
   display: block;
 }
-.single-portfolio .relative {
+.skill-card__image-div {
   margin-bottom: 2rem;
 }
-.single-portfolio .p-inner {
+.skill-card .p-inner {
   text-align: center;
 }
-.single-portfolio .p-inner h4 {
+.skill-card .p-inner h4 {
   font-size: 2rem;
 }
-.single-portfolio .p-inner .cat {
+.skill-card .p-inner .cat {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #cccccc;
+}
+
+.skill-card {
+  border-radius: 0.5rem;
 }
 
 .image {
@@ -340,28 +361,6 @@ a:active {
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-.single-portfolio {
-  border-radius: 0.5rem;
-}
-.single-portfolio:hover .thumb .overlay-bg {
-  opacity: 0.85;
-}
-
-.thumb .overlay-bg {
-  opacity: 0;
-  border-radius: 0.5rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-@media screen and (prefers-reduced-motion: reduce) {
-  .thumb .overlay-bg {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
 }
 
 .resume-item {
@@ -407,6 +406,8 @@ a:active {
 
 .site-footer {
   padding: 3em 0rem;
+  background-color: whitesmoke;
+  color: #222;
 }
 .site-footer p:last-child {
   margin-bottom: 0rem;
@@ -444,13 +445,8 @@ a:active {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.white-section {
+.white-card {
   background-color: whitesmoke;
-  color: #222;
-}
-
-.white-section h2,
-h4 {
   color: #222;
 }
 
