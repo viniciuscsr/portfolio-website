@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 10rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.btn.btn-primary {
+  color: #fff;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background: #0f70bf;
+}

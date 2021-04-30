@@ -1,0 +1,43 @@
+section {
+  padding: 5em 0;
+}
+
+.dark-section {
+  background: #333;
+}
+
+.white-section {
+  background-color: $color-background-light;
+  color: #333;
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #333;
+  }
+}
+
+// Section Heading
+
+.section-heading {
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
+}
+.section-heading h2 {
+  position: relative;
+  font-weight: 200;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.section-heading h2 strong {
+  font-weight: 800;
+}
+.section-heading.text-center h2:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

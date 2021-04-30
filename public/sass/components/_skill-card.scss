@@ -1,0 +1,19 @@
+.skill-card {
+  margin-bottom: 5rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+.skill-card__image-div {
+  margin-bottom: 2rem;
+}
+.skill-card .skill-card__description {
+  text-align: center;
+}
+.skill-card .skill-card__description h4 {
+  font-size: 2rem;
+}
+
+.skill-card__image {
+  height: 10rem;
+  width: 10rem;
+}
