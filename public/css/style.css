@@ -319,3 +319,6 @@ a:active {
 .white-card {
   background-color: #f5f5f5;
   color: #333; }
+
+.white-card h3 {
+  color: #4682b4; }
